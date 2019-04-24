@@ -16,6 +16,8 @@ const routes = {
 };
 
 const routerApp = async () => {
+  console.log("hola");
+
   const header = null || document.getElementById("header-container");
   const content = null || document.getElementById("page-container");
   const footer = null || document.getElementById("footer-container");
