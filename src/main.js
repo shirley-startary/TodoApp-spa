@@ -9,7 +9,10 @@ import Form from "./views/components/Form.js";
 
 import Utils from "./services/Utils.js";
 // Initial Storage
-localStorage.setItem("TaskList", JSON.stringify([]));
+localStorage.setItem(
+  "TaskList",
+  localStorage.getItem("TaskList") || JSON.stringify([])
+);
 
 const routes = {
   "/": All,
@@ -64,7 +67,6 @@ const addTask = e => {
   };
 
   arrayTask.push(objTask);
-  console.log(arrayTask);
 
   localStorage.setItem("TaskList", JSON.stringify(arrayTask));
   routerApp();
