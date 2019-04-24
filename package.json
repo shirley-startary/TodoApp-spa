@@ -1,0 +1,24 @@
+{
+  "name": "spa-todo-app",
+  "version": "0.0.1",
+  "description": "crearemos una todoapp con spa",
+  "main": "index.js",
+  "scripts": {
+    "server": "live-server src",
+    "test": "jest"
+  },
+  "keywords": [
+    "spa",
+    "todo",
+    "app",
+    "routing",
+    "templating",
+    "DOM",
+    "js"
+  ],
+  "author": "Silvana",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
