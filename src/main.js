@@ -8,6 +8,8 @@ import Navbar from "./views/components/Navbar.js";
 import Form from "./views/components/Form.js";
 
 import Utils from "./services/Utils.js";
+// Initial Storage
+localStorage.setItem("TaskList", JSON.stringify([]));
 
 const routes = {
   "/": All,
@@ -16,8 +18,6 @@ const routes = {
 };
 
 const routerApp = async () => {
-  console.log("hola");
-
   const header = null || document.getElementById("header-container");
   const content = null || document.getElementById("page-container");
   const footer = null || document.getElementById("footer-container");
