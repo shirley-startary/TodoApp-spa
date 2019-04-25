@@ -1,7 +1,7 @@
 import All from "./views/pages/All.js";
 import Active from "./views/pages/Active.js";
 import Completed from "./views/pages/Completed.js";
-import Error404 from "./views/pages/Error404.js";
+import Error404 from "./views/pages/Error404.js ";
 
 import Footer from "./views/components/Footer.js";
 import Navbar from "./views/components/Navbar.js";
@@ -86,8 +86,9 @@ const checked = e => {
     } else {
       arrayTask = arrayTask.map(item => {
         if (item.id == e.target.id) {
-          return (item.status = "Active");
+          item.status = "Active";
         }
+        return item;
       });
     }
   }
